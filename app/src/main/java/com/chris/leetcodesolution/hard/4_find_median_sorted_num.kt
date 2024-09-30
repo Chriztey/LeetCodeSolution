@@ -51,6 +51,17 @@ class FindMedianSortedNumbers{
             }
 
             if (shorterPartLeft  > longerPartRight ) {
+
+                /*
+
+                halving the search space each time,
+                we progressively reduce the range where the solution can exist.
+                The number of positions moved may vary (sometimes it may seem to move 2 positions, sometimes 1),
+                but that is expected because binary search doesn't move in fixed steps of 1.
+                Instead, it moves by halving the range.
+
+                 */
+
                 highPointer = shorterPart - 1
             } else {
                 startingPointer = shorterPart + 1

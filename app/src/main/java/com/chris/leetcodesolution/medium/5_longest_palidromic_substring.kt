@@ -6,8 +6,6 @@ class LongestPalidromicSubstring {
 
     fun longestPalindrome(s: String): String {
 
-        var leftPointer: Int = 0
-        var rightPointer: Int = 0
 
         var result = ""
 

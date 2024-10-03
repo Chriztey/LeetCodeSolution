@@ -13,6 +13,8 @@ class ReverseInteger {
         val minInt = -(2.0.pow(31)).toInt()
         var reverse = 0
 
+
+
         while ( input != 0) {
 
             if (reverse > maxInt/10 || reverse < minInt/10) {
